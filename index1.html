@@ -1,0 +1,19 @@
+<!-- Countdown Cover Section -->
+<div id="countdown-cover">
+  <!-- Elfsight Countdown Timer Widget -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-40a9e412-c80a-46c3-832b-98a58ed01d6d" data-elfsight-app-lazy></div>
+</div>
+
+
+<script>
+// target end date and time
+const targetDate = new Date("2025-07-12T00:00:00"); // launch time
+const now = new Date();
+const remaining = targetDate - now;
+
+setTimeout(() => {
+  document.getElementById('countdown-cover').remove();
+  document.getElementById('main-site').removeAttribute('hidden');
+}, remaining);
+</script>
